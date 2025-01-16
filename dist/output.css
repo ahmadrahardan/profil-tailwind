@@ -1025,6 +1025,18 @@ video {
   background-image: url(/dist/img/perih.png);
 }
 
+.bg-\[url\(\.\/dist\/img\/denting\.png\)\] {
+  background-image: url(./dist/img/denting.png);
+}
+
+.bg-\[url\(\'\'\.\/dist\/img\/denting\.png\)\] {
+  background-image: url(''./dist/img/denting.png);
+}
+
+.bg-\[url\(\'\.\/dist\/img\/denting\.png\'\)\] {
+  background-image: url('./dist/img/denting.png');
+}
+
 .from-slate-100 {
   --tw-gradient-from: #f1f5f9 var(--tw-gradient-from-position);
   --tw-gradient-to: rgb(241 245 249 / 0) var(--tw-gradient-to-position);
