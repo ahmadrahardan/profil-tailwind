@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/remixicon/fonts/remixicon.css" rel="stylesheet">
+    <link rel="stylesheet" href="dist/output.css">
+</head>
+<body>
+    <!-- Header -->
+    <header id="navbar" class="bg-transparent fixed w-full top-0 left-0 z-50 bg-gradient-to-b from-slate-950 to-transparent">
+        <nav class="container flex items-center justify-between h-16 sm:h-20">
+            <div class="px-4 sm:text-2xl font-semibold">rahardan</div>
+            
+            <div id="nav-menu" class="absolute left-[-100%] top-0 min-h-[80vh] w-full bg-slate-800/20 flex items-center justify-center duration-300 overflow-hidden lg:static lg:min-h-fit lg:bg-transparent lg:w-auto">
+                <ul class="flex flex-col items-center gap-8 lg:flex-row">
+                    <li>
+                        <a href="#home" class="nav-link">Home</a>
+                    </li>
+                    
+                    <li>
+                        <a href="#about" class="nav-link">About</a>
+                    </li>
+
+                    <li>
+                        <a href="#gallery" class="nav-link">Gallery</a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="px-4 text-xl right-5 sm:text-3xl cursor-pointer z-50 lg:hidden">
+                <i class="ri-menu-4-line" id="hamburger"></i>
+            </div>
+        </nav>
+    </header>
+    <!-- Header -->
+
+    <!-- Main -->
+    <main class="mb-10">
+        <section id="home">
+            <div class="relative h-[calc(100vh*2/3)] md:h-[90vh] overflow-hidden flex text-center items-end justify-center">
+                <div class="h-1/2 w-full bg-gradient-to-t from-slate-950 to-transparent -bottom-0 absolute z-10"></div>
+                <video playsinline="" autoplay="" loop="" poster="" muted="" class="object-cover absolute top-0 left-0 h-screen w-screen" src="dist/img/video-nabuh.mp4"></video>
+            </div>
+        </section>
+        <section id="about" class="pt-36 z-10">
+            <div class="container">
+                <div class="flex flex-wrap">
+                    <div class="w-full self-center px-4 lg:w-1/2">
+                        <h1 class="text-xl md:text-2xl lg:text-3xl">Hello there🙌, I'm <span class="block font-semibold text-4xl md:text-6xl lg:text-8xl mt-1" >Rahardan</span></h1>
+                        <p class="text-base md:text-xl lg:text-2xl mt-5 mb-5 leading-relaxed">I'm an elementary pianist who loves to play pop genre songs</p>
+                    </div>
+                    <div class="w-full self-end px-4 lg:w-1/2">
+                        <div class="relative mt-10 -z-10">
+                            <img src="dist/img/Rahardan_.png" alt="rahardan" class="max-w-full mx-auto">
+                            <span class="absolute bottom-10 -z-10 left-1/2 -translate-x-1/2">
+                                <svg width="400" height="400" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill="white" d="M67,-52.1C83.1,-33.2,89.9,-5.6,84.3,19.3C78.7,44.3,60.7,66.5,37.9,76.8C15,87.2,-12.7,85.6,-35.7,74.4C-58.6,63.2,-76.8,42.4,-81.8,19.1C-86.7,-4.2,-78.4,-30.1,-62.6,-48.8C-46.8,-67.6,-23.4,-79.2,1,-80C25.5,-80.9,50.9,-70.9,67,-52.1Z" transform="translate(100 100) scale(1.1)" />
+                                </svg>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="gallery">
+            <div class="mt-36 p-2 grid grid-cols-2 gap-2 md:grid-cols-4 md:p-4 ">
+                <h2 class="text-xl font-semibold md:col-start-2 md:row-start-2 md:flex md:text-2xl"><span class="self-center">Welcome to my gallery</span></h2>
+                <div class="text-lg font-bold md:col-start-4 md:row-start-2 justify-end self-end flex md:text-2xl">@rahardan_</div>
+        
+                <div class="bg-slate-200 rounded-lg aspect-[4/3] md:aspect-[3/4] xl:aspect-[4/3] group relative overflow-hidden hover:scale-95 transition-all duration-500">
+                    <div class="w-full h-full bg-[url(/dist/img/denting.png)] bg-cover bg-center absolute group-hover:scale-125 transition-all duration-500"></div>
+
+                    <div class="w-full h-full flex flex-col items-center justify-center text-white font-semibold opacity-0 group-hover:opacity-100 transition-all duration-500 z-10 absolute">
+                        <a href="https://www.youtube.com/watch?v=RjkEH7qJ-9U&t=1s" target="_blank" rel="noopener noreferrer" class="flex items-center justify-center mb-2 hover:scale-125 transition-transform duration-300">
+                            <i class="ri-play-circle-fill text-5xl md:text-8xl"></i>
+                        </a>
+                        <p class="text-sm md:text-xl">Denting</p>
+                    </div>
+                </div>
+                <div class="bg-slate-200 rounded-lg aspect-[4/3] md:aspect-[3/4] xl:aspect-[4/3] md:col-start-3 group relative overflow-hidden hover:scale-95 transition-all duration-500">
+                    <div class="w-full h-full bg-[url(/dist/img/seandainya.png)] bg-cover bg-center absolute group-hover:scale-125 transition-all duration-500"></div>
+
+                    <div class="w-full h-full flex flex-col items-center justify-center text-white font-semibold opacity-0 group-hover:opacity-100 transition-all duration-500 z-10 absolute">
+                        <a href="https://www.youtube.com/watch?v=2p7l13pnYvU" target="_blank" rel="noopener noreferrer" class="flex items-center justify-center mb-2 hover:scale-125 transition-transform duration-300">
+                            <i class="ri-play-circle-fill text-5xl md:text-8xl"></i>
+                        </a>
+                        <p class="text-sm md:text-xl">Seandainya</p>
+                    </div>
+                </div>
+                <div class="bg-slate-200 rounded-lg aspect-[4/3] md:aspect-[3/4] xl:aspect-[4/3] group relative overflow-hidden hover:scale-95 transition-all duration-500">
+                    <div class="w-full h-full bg-[url(/dist/img/river-flows.png)] bg-cover bg-center absolute group-hover:scale-125 transition-all duration-500"></div>
+
+                    <div class="w-full h-full flex flex-col items-center justify-center text-white font-semibold opacity-0 group-hover:opacity-100 transition-all duration-500 z-10 absolute">
+                        <a href="https://www.youtube.com/watch?v=pvljP2EsCpE&t=2s" target="_blank" rel="noopener noreferrer" class="flex items-center justify-center mb-2 hover:scale-125 transition-transform duration-300">
+                            <i class="ri-play-circle-fill text-5xl md:text-8xl"></i>
+                        </a>
+                        <p class="text-sm md:text-xl">River Flows in You</p>
+                    </div>
+                </div>
+                <div class="bg-slate-200 rounded-lg aspect-[4/3] md:aspect-[3/4] xl:aspect-[4/3] group relative overflow-hidden hover:scale-95 transition-all duration-500">
+                    <div class="w-full h-full bg-[url(/dist/img/million-dreams.png)] bg-cover bg-center absolute group-hover:scale-125 transition-all duration-500"></div>
+
+                    <div class="w-full h-full flex flex-col items-center justify-center text-white font-semibold opacity-0 group-hover:opacity-100 transition-all duration-500 z-10 absolute">
+                        <a href="https://www.youtube.com/watch?v=8s9IGcVEd8I" target="_blank" rel="noopener noreferrer" class="flex items-center justify-center mb-2 hover:scale-125 transition-transform duration-300">
+                            <i class="ri-play-circle-fill text-5xl md:text-8xl"></i>
+                        </a>
+                        <p class="text-sm md:text-xl">A Million Dreams</p>
+                    </div>
+                </div>
+                <div class="bg-slate-200 rounded-lg aspect-[4/3] md:aspect-[3/4] xl:aspect-[4/3] group relative overflow-hidden hover:scale-95 transition-all duration-500">
+                    <div class="w-full h-full bg-[url(/dist/img/kasih-putih.png)] bg-cover bg-center absolute group-hover:scale-125 transition-all duration-500"></div>
+
+                    <div class="w-full h-full flex flex-col items-center justify-center text-white font-semibold opacity-0 group-hover:opacity-100 transition-all duration-500 z-10 absolute">
+                        <a href="https://www.youtube.com/watch?v=ni5gWQmDR1A" target="_blank" rel="noopener noreferrer" class="flex items-center justify-center mb-2 hover:scale-125 transition-transform duration-300">
+                            <i class="ri-play-circle-fill text-5xl md:text-8xl"></i>
+                        </a>
+                        <p class="text-sm md:text-xl">Kasih Putih</p>
+                    </div>
+                </div>
+                <div class="bg-slate-200 rounded-lg aspect-[4/3] md:aspect-[3/4] xl:aspect-[4/3] md:col-start-2 group relative overflow-hidden hover:scale-95 transition-all duration-500">
+                    <div class="w-full h-full bg-[url(/dist/img/garis-terdepan.png)] bg-cover bg-center absolute group-hover:scale-125 transition-all duration-500"></div>
+
+                    <div class="w-full h-full flex flex-col items-center justify-center text-white font-semibold opacity-0 group-hover:opacity-100 transition-all duration-500 z-10 absolute">
+                        <a href="https://www.youtube.com/watch?v=V_QLnGAQlFU&t=13s" target="_blank" rel="noopener noreferrer" class="flex items-center justify-center mb-2 hover:scale-125 transition-transform duration-300">
+                            <i class="ri-play-circle-fill text-5xl md:text-8xl"></i>
+                        </a>
+                        <p class="text-sm md:text-xl">Garis Terdepan</p>
+                    </div>
+                </div>
+                <div class="bg-slate-200 rounded-lg aspect-[4/3] md:aspect-[3/4] xl:aspect-[4/3] md:col-start-4 group relative overflow-hidden hover:scale-95 transition-all duration-500">
+                    <div class="w-full h-full bg-[url(/dist/img/perih.png)] bg-cover bg-center absolute group-hover:scale-125 transition-all duration-500"></div>
+
+                    <div class="w-full h-full flex flex-col items-center justify-center text-white font-semibold opacity-0 group-hover:opacity-100 transition-all duration-500 z-10 absolute">
+                        <a href="https://www.youtube.com/watch?v=k4YfMD3KV_0&t=4s" target="_blank" rel="noopener noreferrer" class="flex items-center justify-center mb-2 hover:scale-125 transition-transform duration-300">
+                            <i class="ri-play-circle-fill text-5xl md:text-8xl"></i>
+                        </a>
+                        <p class="text-sm md:text-xl">Perih</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    
+    <!-- Footer -->
+    <footer class="bg-slate-900 pt-24 pb-12">
+        <div class="container">
+            <div class="flex flex-wrap">
+                <div class="w-full px-4 mb-12 text-slate-30 font-medium md:w-1/3">
+                    <h2 class="font-bold text-4xl mb-5 text-white">Rahardan</h2>
+                    <h3 class="font-bold text-2xl mb-2">Contact Me</h3>
+                    <p>rahardan313@gmail.com</p>
+                    <p>Jember, East Java, Indonesia</p>
+                </div>
+                <div class="w-full pt-10 border-t border-slate-700">
+                    <div class="flex items-center justify-center mb-5">
+                        <!-- Youtube -->
+                        <a href="https://youtube.com/@rahardan_" target="_blank" class="w-9 h-9 mr-3 rounded-full flex justify-center items-center border border-slate-200 text-slate-300 hover:text-white hover:bg-slate-300">
+                            <svg role="img" width="20" class="fill-current" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>YouTube</title><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
+                        </a>
+
+                        <!-- Instagram -->
+                        <a href="https://instagram.com/rahardan_" target="_blank" class="w-9 h-9 mr-3 rounded-full flex justify-center items-center border border-slate-200 text-slate-300 hover:text-white hover:bg-slate-300">
+                            <svg role="img" width="20" class="fill-current" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>Instagram</title><path d="M7.0301.084c-1.2768.0602-2.1487.264-2.911.5634-.7888.3075-1.4575.72-2.1228 1.3877-.6652.6677-1.075 1.3368-1.3802 2.127-.2954.7638-.4956 1.6365-.552 2.914-.0564 1.2775-.0689 1.6882-.0626 4.947.0062 3.2586.0206 3.6671.0825 4.9473.061 1.2765.264 2.1482.5635 2.9107.308.7889.72 1.4573 1.388 2.1228.6679.6655 1.3365 1.0743 2.1285 1.38.7632.295 1.6361.4961 2.9134.552 1.2773.056 1.6884.069 4.9462.0627 3.2578-.0062 3.668-.0207 4.9478-.0814 1.28-.0607 2.147-.2652 2.9098-.5633.7889-.3086 1.4578-.72 2.1228-1.3881.665-.6682 1.0745-1.3378 1.3795-2.1284.2957-.7632.4966-1.636.552-2.9124.056-1.2809.0692-1.6898.063-4.948-.0063-3.2583-.021-3.6668-.0817-4.9465-.0607-1.2797-.264-2.1487-.5633-2.9117-.3084-.7889-.72-1.4568-1.3876-2.1228C21.2982 1.33 20.628.9208 19.8378.6165 19.074.321 18.2017.1197 16.9244.0645 15.6471.0093 15.236-.005 11.977.0014 8.718.0076 8.31.0215 7.0301.0839m.1402 21.6932c-1.17-.0509-1.8053-.2453-2.2287-.408-.5606-.216-.96-.4771-1.3819-.895-.422-.4178-.6811-.8186-.9-1.378-.1644-.4234-.3624-1.058-.4171-2.228-.0595-1.2645-.072-1.6442-.079-4.848-.007-3.2037.0053-3.583.0607-4.848.05-1.169.2456-1.805.408-2.2282.216-.5613.4762-.96.895-1.3816.4188-.4217.8184-.6814 1.3783-.9003.423-.1651 1.0575-.3614 2.227-.4171 1.2655-.06 1.6447-.072 4.848-.079 3.2033-.007 3.5835.005 4.8495.0608 1.169.0508 1.8053.2445 2.228.408.5608.216.96.4754 1.3816.895.4217.4194.6816.8176.9005 1.3787.1653.4217.3617 1.056.4169 2.2263.0602 1.2655.0739 1.645.0796 4.848.0058 3.203-.0055 3.5834-.061 4.848-.051 1.17-.245 1.8055-.408 2.2294-.216.5604-.4763.96-.8954 1.3814-.419.4215-.8181.6811-1.3783.9-.4224.1649-1.0577.3617-2.2262.4174-1.2656.0595-1.6448.072-4.8493.079-3.2045.007-3.5825-.006-4.848-.0608M16.953 5.5864A1.44 1.44 0 1 0 18.39 4.144a1.44 1.44 0 0 0-1.437 1.4424M5.8385 12.012c.0067 3.4032 2.7706 6.1557 6.173 6.1493 3.4026-.0065 6.157-2.7701 6.1506-6.1733-.0065-3.4032-2.771-6.1565-6.174-6.1498-3.403.0067-6.156 2.771-6.1496 6.1738M8 12.0077a4 4 0 1 1 4.008 3.9921A3.9996 3.9996 0 0 1 8 12.0077"/></svg>
+                        </a>
+                    </div>
+                    <p class="font-medium text-xs md:text-sm text-slate-500 text-center">Made by <a href="https://instagram.com/rahardan_" target="_blank" class="font-semibold text-white">Ahmad Rahardan</a> using <a href="https://tailwindcss.com" target="_blank" class="font-semibold text-sky-500">Tailwind CSS</a>.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- Footer -->
+    <script src="main.js"></script>
+</body>
+</html>
